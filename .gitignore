@@ -1,0 +1,67 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Django migration files
+*/migrations/
+
+# SQLite database files
+*.sqlite3
+
+# Media files
+media/
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+.virtualenv/
+
+# IDE and editor settings (e.g., VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.bak
+*.swp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python distribution and packaging
+build/
+dist/
+*.egg-info/
+
+# Docker-related files
+docker-compose.override.yml
+Dockerfile
+
+# GitHub-related files
+*.github/
+
+# Coverage report files
+coverage.xml
+*.cover
+
+# Testing files
+nosetests.xml
+coverage.xml
+*.hypothesis/
+.pytest_cache/
+
+# JetBrains IDE files
+.idea/
+
+# Python environment files
+pip-log.txt
+pip-delete-this-directory.tx
+.md
