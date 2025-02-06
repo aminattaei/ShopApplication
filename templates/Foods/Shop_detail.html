@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}{{food.title}} - Shandiz Restaurant{% endblock title %}
+
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+      <!-- تصویر غذا -->
+      <div class="col-md-6">
+        <img src="{{food.image.url}}" alt="{{food.title}}" class="img-fluid rounded">
+      </div>
+  
+      <!-- توضیحات محصول -->
+      <div class="col-md-6">
+        <h2>{{food.title}}</h2>
+        <p class="lead">{{food.content}}</p>
+  
+        <!-- ویژگی‌ها -->
+        <h4>ویژگی‌ها:</h4>
+        <ul>
+          <li>مواد اولیه: مواد اولیه غذا را بنویسید.</li>
+          <li>ارزش غذایی: اطلاعات غذایی مثل کالری، پروتئین و ...</li>
+        </ul>
+  
+        <!-- قیمت و دکمه خرید -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <h3 class="text-success">قیمت: ۱۵۰,۰۰۰ تومان</h3>
+          <a href="#" class="btn btn-primary">افزودن به سبد خرید</a>
+        </div>
+  
+        <!-- نظرات مشتریان -->
+        <hr>
+        <h4>نظرات مشتریان:</h4>
+        <div class="feedback">
+          <div class="mb-2">
+            <strong>آرش</strong>
+            <p>خوشمزه بود، اما کمی بیشتر نمک نیاز داشت.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
